@@ -1,0 +1,150 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-image:linear-gradient(115deg, rgba(5, 5, 143, 0.8), rgba(31, 217, 71, 0.7))/*, url(../img/velocidad.jpg)*/;
+  z-index: -1;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+nav.navbar.navbar-dark.bg-dark.text-white.fixed-top {
+  opacity: 0.8;
+}
+
+footer {
+  background-color: rgb(56, 60, 60);
+}
+
+footer > p {
+  margin-bottom: 0;
+  color: white;
+}
+
+footer > p > a { 
+  text-decoration: none; 
+  color: white;
+}
+/* imagen perfil */
+img.rounded-circle {
+  width: 12rem;
+}
+
+div.container {
+  margin: 100px auto;
+}
+
+p.text-center.fs-4.fw-semibold.p-3 {
+  border: 1px solid gray;
+}
+
+i.fa-brands.fa-2xl.fa-instagram:hover,
+i.fa-brands.fa-2xl.fa-linkedin:hover,
+i.fa-brands.fa-2xl.fa-github:hover {
+  transition: ease-in-out 1s;
+  transform: rotateY(360deg) scale(1.5);
+  /* color: yellow; */
+}
+
+i.fa-solid.fa-2xl.fa-user-lock:hover,
+i.fa-solid.fa-2xl.fa-user:hover {
+  transition: ease-in-out 1s;
+  transform: scale(1.3);
+}
+
+li.list-group-item.p-2 {
+  background-color: rgb(33,37,41);
+  color: white;
+  border: none;
+}
+
+div.modal-content {
+  background-image: url();
+  color:rgb(56, 60, 60);
+}
+
+.progress-bar.progress-bar-striped.progress-bar-animated {
+  background-color: #039b6e;
+}
+
+.progress-bar.progress-bar-striped.progress-bar-animated.two {
+  background-color: rgb(226, 223, 223);
+}
+
+.d-block.w-100.banner {
+  max-width: 100vw;
+  max-height: 70vh;
+}
+
+/* media query */
+@media (max-width: 576px) {
+  img.rounded-circle {
+    width: 8rem;
+  }
+  .text-center.ms-5 {
+    margin-right: 60px;  
+  }
+  #sobre-mi,
+  #skils,
+  #proyectos {
+    margin-left: 0.5rem;
+  }
+}
+
+#accordionEstudios,
+#accordionTrabajo {
+  --bs-accordion-transition: color 0.5s ease-in-out,background-color 0.5s ease-in-out,border-color 0.5s ease-in-out,box-shadow 0.15s ease-in-out,border-radius 0.15s ease;
+
+  --bs-accordion-btn-icon-width: 1.2rem;
+  --bs-accordion-btn-icon-transform: rotate(-540deg);
+  --bs-accordion-btn-icon-transition: transform 0.8s ease-in-out;
+}
+
+#sobre-mi,
+#estudios,
+#trabajo,
+#habilidades {
+  width: 90vw;
+}
+
+#sobre-mi {
+  margin-top: 122px;
+}
+
+.img-thumbnail.estudios {
+  width: 50px;
+}
+
+div.card  { 
+  width: 18rem;
+}
+
+div.card > span.card-marco {
+  width: 18rem;
+  height: 16rem;
+  overflow: hidden;
+}
+
+/* icono lapiz y cesto */
+.fa-solid.fa-pen.fa-xl,
+.fa-regular.fa-trash-can.fa-xl {
+  color: green;
+}
+
+.edit-banner {
+  position: absolute;
+  top: 12px;
+  right: 30px;
+  z-index: 1000;
+}
