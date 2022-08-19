@@ -84,6 +84,7 @@ div.modal-content {
   background-color: rgb(226, 223, 223);
 }
 
+/* banner */
 .d-block.w-100.banner {
   max-width: 100vw;
   max-height: 70vh;
@@ -143,6 +144,7 @@ div.card > span.card-marco {
 .fa-regular.fa-trash-can.fa-xl {
   color: green;
 }
+
 
 .edit-banner {
   position: absolute;
